@@ -1,0 +1,58 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  width: 55%;
+  right: 0%;
+  top: 15%;
+  color: white;
+}
+.About h1 {
+  font-size: 3rem;
+  color: white;
+}
+.About h1 span {
+  color: #7cf03d;
+}
+.About p {
+  color: thistle;
+  width: 72%;
+}
+
+.About div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.About div p {
+  flex: 1 0 30%;
+  text-transform: capitalize;
+}
+.About div p span {
+  color: #7cf03d;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 535px) {
+  .About {
+    width: 100%;
+    right: 0;
+    top: 70%;
+    padding: 20px;
+  }
+  .About h1 {
+    font-size: 3rem;
+  }
+  .About p {
+    width: 100%;
+  }
+  .About div {
+    width: 100%;
+  }
+  .About div p {
+    flex: 1 0 100%;
+  }
+}

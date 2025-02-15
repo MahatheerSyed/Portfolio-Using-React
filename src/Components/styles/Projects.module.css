@@ -1,0 +1,163 @@
+.Projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+  transition: all 0.5s ease;
+  margin-top: -70px;
+}
+
+.Projects h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+.Projects h1 span {
+  color: #7cf03d;
+}
+
+.ProjectsContainer {
+  display: flex;
+  margin-left: 220px;
+  transition: all 0.5s ease;
+}
+.ProjectContent {
+  width: 48%;
+  height: 20rem;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.ProjectContent h1 {
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px thistle;
+}
+.ProjectContent .tech {
+  font-size: 1.1rem;
+  color: #7cf03d;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.ProjectContent h2 {
+  font-size: 4rem;
+}
+.ProjectContent p {
+  font-size: 1rem;
+  color: thistle;
+}
+
+.ProjectContent div {
+  display: flex;
+  gap: 10px;
+  margin: 5px;
+}
+.ProjectContent div a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+/* ========image slider======= */
+.ProjectImages {
+  width: 35%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.5s ease;
+}
+
+.ProjectSlider {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.ProjectSlider img {
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid red;
+}
+
+.Navigation {
+  display: flex;
+  gap: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 60px;
+}
+.Navigation p {
+  width: 90px;
+  height: 30px;
+  background-color: #7cf03d;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.Navigation p .navIcon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  color: white;
+}
+@media screen and (max-width: 535px) {
+  .Projects h1 {
+    font-size: 3rem;
+    padding-left: 10px;
+  }
+  .Projects {
+    margin-top: 0px;
+    transform: translateY(2%);
+    padding: 0px;
+    gap: 0;
+    text-align: left;
+    align-items: flex-start;
+    z-index: 2;
+    height: max-content;
+  }
+  .ProjectContent h2 {
+    font-size: 3.5rem;
+  }
+  .ProjectsContainer {
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+  }
+  .ProjectContainer {
+    width: 100%;
+  }
+  .ProjectsContainer p {
+    width: 210%;
+  }
+  .ProjectImages {
+    width: 100%;
+    position: relative;
+  }
+  hr {
+    width: 220%;
+  }
+  .ProjectSlider {
+    width: 90%;
+    position: absolute;
+    top: 190%;
+  }
+  .Navigation {
+    position: absolute;
+    top: 290%;
+    margin-bottom: 10px;
+  }
+}

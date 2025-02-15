@@ -1,0 +1,79 @@
+.Education {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 55%;
+  gap: 50px;
+}
+
+.Education h1 {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.Education h1 span {
+  color: #7cf03d;
+}
+.EduCards > * {
+  margin: 0;
+  padding: 0;
+}
+
+.EduCards {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.EduCards > * {
+  flex: 1 0 40%; /* This means each child will take up 50% of the row */
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.EduCard {
+  width: 300px;
+  background-color: #323946;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+  transition: all 0.3s;
+}
+.EduCard p {
+  color: #7cf03d;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.EduCard h1 {
+  font-size: 1rem;
+}
+.EduCard:hover {
+  color: #7cf03d;
+  box-shadow: 1px 1px 10px #7cf03d;
+  scale: 1.1;
+}
+
+.EduCard h3 {
+  font-size: 0.9rem;
+  color: thistle;
+}
+
+/* ==========mediaQuery===================== */
+@media screen and (max-width: 535px) {
+  .Education {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 5%;
+    top: 65%;
+  }
+  .EduCards {
+    width: 90%;
+  }
+}

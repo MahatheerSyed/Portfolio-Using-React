@@ -1,0 +1,80 @@
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.6s ease;
+  animation: HeaderAnimate 1s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes HeaderAnimate {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.Header ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Header h1 {
+  font-size: 32px;
+}
+.Header ul li {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  text-transform: uppercase;
+  transition: 0.6s ease;
+}
+
+.Header ul li.active {
+  color: #7cf03d;
+}
+
+#menuIcon {
+  color: white;
+  display: none;
+}
+
+@media screen and (max-width: 535px) {
+  #menuIcon {
+    color: white;
+    display: flex;
+    z-index: 1;
+    font-size: 20px;
+  }
+
+  .Header {
+    justify-content: space-between;
+    z-index: 999;
+    position: relative;
+  }
+
+  .Header ul {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    top: -1500%;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s ease;
+    gap: 15px;
+    z-index: 11000;
+    overflow: hidden;
+  }
+}

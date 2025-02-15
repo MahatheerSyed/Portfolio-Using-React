@@ -1,0 +1,150 @@
+.ContactPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.ContactContent {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  width: 50%;
+  left: 16%;
+  top: 20%;
+  gap: 20px;
+}
+.ContactContent p {
+  color: thistle;
+  width: 70%;
+}
+.ContactContent h1 {
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.ContactContent div {
+  display: flex;
+  gap: 20px;
+}
+.ContactContent div h2 {
+  width: 100px;
+  height: 60px;
+  background-color: #323946;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContactContent div p {
+  color: #7cf03d;
+  text-transform: uppercase;
+  flex-direction: column;
+  display: flex;
+  font-size: 1rem;
+}
+.ContactContent div p #AboutSpan {
+  color: white;
+  text-transform: capitalize;
+}
+
+/* ==========form========================= */
+.ContactForm {
+  background-color: #323946;
+  width: 35%;
+  padding: 20px;
+  position: absolute;
+  right: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.ContactForm h1 {
+  color: white;
+  font-size: 3rem;
+}
+.ContactForm h1 span {
+  color: #7cf03d;
+}
+.FormTOsubmit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.FormTOsubmit div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.FormTOsubmit div input {
+  flex: 1 0 40%;
+  padding: 15px;
+  border: none;
+  background-color: #1f242d;
+  color: thistle;
+  outline: none;
+}
+
+.FormTOsubmit textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #1f242d;
+  color: thistle;
+  outline: none;
+  resize: none;
+}
+.FormTOsubmit button {
+  width: 200px;
+  padding: 15px;
+  align-self: center;
+  background-color: #7cf03d;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #7cf03d;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.FormTOsubmit button:hover {
+  background-color: transparent;
+  color: #7cf03d;
+}
+
+/* ===============mediaQueries==================== */
+
+@media screen and (max-width: 535px) {
+  .ContactPage {
+    position: relative;
+    padding: 10px;
+  }
+
+  .ContactContent {
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    padding: 10px;
+  }
+  .ContactContent p {
+    width: 100%;
+  }
+  .ContactContent div {
+    width: 100%;
+  }
+  .ContactForm {
+    width: 100%;
+    right: 0%;
+    top: 65%;
+    scale: 0.95;
+  }
+}

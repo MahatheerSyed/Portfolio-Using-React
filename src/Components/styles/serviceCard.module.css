@@ -1,0 +1,58 @@
+.ServiceCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #323946;
+  width: 330px;
+  height: 320px;
+  padding: 20px;
+  color: white;
+  gap: 30px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+  transition: all 0.3s;
+}
+.ServiceCard:hover {
+  scale: 1.1;
+  box-shadow: #7cf03d 1px 1px 10px;
+}
+.ServiceCard:hover h1 {
+  color: #7cf03d;
+}
+.ServiceCard:hover h3 {
+  transform: rotateZ(0deg);
+}
+
+.ServiceCard div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ServiceCard h1 {
+  font-size: 1.5rem;
+}
+.ServiceCard p {
+  font-size: 14px;
+  width: 100%;
+  color: #fff9;
+}
+.ServiceCard h2 {
+  font-size: 1.5rem;
+}
+.ServiceCard h3 {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotateZ(15deg);
+  transition: all 0.3s;
+  z-index: 1;
+}
+@media screen and (max-width: 535px) {
+  .ServiceCard {
+    scale: 0.2;
+  }
+}

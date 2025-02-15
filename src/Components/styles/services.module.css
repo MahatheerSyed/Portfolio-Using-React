@@ -1,0 +1,29 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  margin-top: 120px;
+}
+.services h1 {
+  font-size: 3rem;
+  color: white;
+}
+.services h1 span {
+  color: #7cf03d;
+}
+.CardContainer {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 535px) {
+  .CardContainer {
+    flex-direction: column;
+  }
+}

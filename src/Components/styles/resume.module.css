@@ -1,0 +1,82 @@
+.Resume {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 30px;
+  position: relative;
+}
+
+.ResumeOptions {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 20px;
+  position: absolute;
+  left: 14%;
+  top: 15%;
+}
+
+.ResumeOptions h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.ResumeOptions p {
+  color: thistle;
+  letter-spacing: 1px;
+}
+.ResumeOptions div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* position: relative; */
+  margin: 0;
+  padding: 0;
+}
+
+.ResumeOptions button {
+  width: 95%;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #323946;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+  align-items: center;
+  border-radius: 3px;
+  position: relative;
+  left: 0;
+  cursor: pointer;
+  /* gap: 0px; */
+}
+.ResumeOptions button.active {
+  border: 1px solid #7cf03d;
+  color: #7cf03d;
+}
+
+.ResumeOptions button:hover {
+  background-color: transparent;
+  box-shadow: 1px 1px 5px #7cf03d;
+}
+
+/* ===============mediaQuery===================== */
+@media screen and (max-width: 535px) {
+  .Resume {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  .ResumeOptions {
+    width: 100%;
+    left: 1%;
+    top: 10%;
+    scale: 0.95;
+  }
+  .ResumeOptions button {
+    width: 100%;
+    left: -2%;
+  }
+}

@@ -1,0 +1,32 @@
+.LoadingAnimate {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  display: flex;
+  z-index: 1;
+  background-color: white;
+}
+
+.LoadingAnimate .bar {
+  width: 100%;
+  height: 100%;
+  background-color: #1f242d;
+}
+
+.LoadingAnimate.active .bar {
+  animation: LoadAnimate 0.5s ease-in-out both;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes LoadAnimate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.LoadingAnimate.active {
+  z-index: -1;
+}

@@ -1,0 +1,117 @@
+.Experince {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  flex-direction: column;
+  width: 55%;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+
+.Experince h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.Experince h1 span {
+  color: #7cf03d;
+}
+.Experince p {
+  color: thistle;
+  font-size: 1rem;
+  width: 75%;
+}
+.ExperinceCards {
+  width: 100%;
+  height: inherit;
+}
+.ExperinceCard {
+  width: 50%;
+  height: 100%;
+  background-color: #323946;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+}
+.ExperinceCard:hover {
+  box-shadow: 1px 1px 10px #7cf03d;
+}
+.ExperinceCard p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  width: 100%;
+}
+.ExperinceCard p span {
+  color: #7cf03d;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.ExperinceCard p a {
+  width: 90px;
+  text-decoration: none;
+  color: white;
+  background-color: #7cf03d;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  border: 1px solid #7cf03d;
+}
+.ExperinceCard p a:hover {
+  background-color: transparent;
+  color: #7cf03d;
+}
+
+.ExperinceCard h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.ExperinceCard h3 {
+  font-size: 1.2rem;
+  color: #7cf03d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ExperinceCard h3 img {
+  width: 40px;
+  height: 40px;
+  filter: ccontrast(200%);
+  background-color: white;
+  border-radius: 50%;
+}
+.ExperinceCard p:last-child {
+  font-size: 0.9rem;
+  color: thistle;
+}
+
+/* ===========mediaQuery======================== */
+@media screen and (max-width: 535px) {
+  .Experince {
+    width: 100%;
+    left: 3%;
+    top: 80%;
+  }
+  .Experince h1 {
+    font-size: 2.5rem;
+  }
+  .Experince p {
+    width: 90%;
+  }
+  .ExperinceCards {
+    width: 90%;
+  }
+  .ExperinceCard {
+    width: 100%;
+    scale: 0.78;
+  }
+  .ExperinceCard p {
+    align-items: center;
+  }
+}

@@ -1,0 +1,57 @@
+.Skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 40%;
+}
+.Skills h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+.Skills h1 span {
+  color: #7cf03d;
+}
+.Skills p {
+  /* width: 20%; */
+  color: thistle;
+}
+.SkillsCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.3s;
+}
+.SkillsCard {
+  flex: 1 0 10%;
+  background-color: #323946;
+  width: 200px;
+  padding: 20px;
+  align-self: center;
+  font-size: 3.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+}
+
+.SkillsCard:hover {
+  color: #7cf03d;
+  box-shadow: 1px 1px 10px #7cf03d;
+}
+.SkillsCard .SkillsCard div:last-child {
+  flex-grow: 0;
+}
+@media screen and (max-width: 535px) {
+  .Skills {
+    width: 100%;
+    top: 80%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    position: relative;
+  }
+}
